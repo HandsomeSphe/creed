@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #929292;
+  position: relative;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 1rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  margin-left: .5rem;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper__main {
+  width: 68rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+}
+
+.wrapper__two {
+  background-color: white;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.bottombar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.player0 {
+  background-color: lightgray;
+  height: 11rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding: 3.2rem;
+}
+
+.player1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 11rem;
+  background-color: #F8F5B1;
+  padding: 3.2rem;
+}
+
+.player-name {
+  font-size: 1.5rem;
+  font-family: inherit;
+  text-align: center;
+  font-weight: 100;
+  position: relative;
+}
+
+.player-current-label {
+  text-align: center;
+  margin: 1rem;
+}
+
+.player-current-score {
+  text-align: center;
+}
+
+/*
+.active{background-color:#f7f7f7;
+
+}*/
+.active .player-name {
+  font-weight: 300;
+}
+
+.active .player-name::after {
+  content: "\2022";
+  font-size: 37px;
+  position: absolute;
+  color: #FFB800;
+  top: -7px;
+  right: 80px;
+}
+
+.winner {
+  background-color: #f7f7f7;
+}
+
+.winner .player-name {
+  font-weight: 300;
+  color: #FFB800;
+}
+
+.wrapper__two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainbar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 70%;
+          flex: 0 0 70%;
+  background-color: white;
+}
+
+.image {
+  width: 17rem;
+  height: auto;
+  margin-top: 5rem;
+  margin-left: 15rem;
+}
+
+.sidebar {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffff), color-stop(#F8F5B1), to(#FADF9A));
+  background-image: linear-gradient(#ffff, #F8F5B1, #FADF9A);
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.icon {
+  width: 1rem;
+}
+
+.newGame,
+.roller,
+.holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.holder__heading {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.holder__heading:hover {
+  -webkit-transform: translateX(0.15rem) translateY(0);
+          transform: translateX(0.15rem) translateY(0);
+  font-size: 1rem;
+}
+
+.newGAME__heading {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.newGAME__heading:hover {
+  -webkit-transform: translateX(0.15rem) translateY(0);
+          transform: translateX(0.15rem) translateY(0);
+  font-size: 1rem;
+}
+
+.roller__heading {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.roller__heading:hover {
+  -webkit-transform: translateX(0.15rem) translateY(0);
+          transform: translateX(0.15rem) translateY(0);
+  font-size: 1rem;
+}
+
+.newGame {
+  height: 3rem;
+  margin-bottom: 8rem;
+  margin-top: 1.5rem;
+  font-size: 2rem;
+}
+
+.roller {
+  height: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.holder {
+  height: 1rem;
+  margin-bottom: 6rem;
+}
+
+.playerscore-1__heading,
+.playerscore-0__heading {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.player-score {
+  text-align: center;
+}
+
+.playerscore-0 {
+  margin-bottom: 1.8rem;
+}
+
+.playerscore-1 {
+  margin-bottom: 6rem;
+}
+/*# sourceMappingURL=main.css.map */

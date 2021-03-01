@@ -1,0 +1,71 @@
+.sidebar{
+    background-image:linear-gradient(#ffff, #F8F5B1,#FADF9A );
+    padding:1rem;
+    display:flex;
+    flex-direction:column; 
+    
+}
+.icon{
+    width:1rem;
+}
+.newGame,
+.roller,
+.holder{
+    display:flex;
+    align-items:center;
+    cursor:pointer;
+   
+}
+.holder__heading{
+    transition: all 1s;
+    backface-visibility: hidden;
+}
+.holder__heading:hover{
+    transform:translateX(.15rem) translateY(0);
+    font-size:1rem;
+}
+.newGAME__heading{
+    transition: all 1s;
+    backface-visibility: hidden;
+}
+.newGAME__heading:hover{
+    transform:translateX(.15rem) translateY(0);
+    font-size:1rem;
+}
+.roller__heading{
+    transition: all 1s;
+    backface-visibility: hidden;
+}
+.roller__heading:hover{
+    transform:translateX(.15rem) translateY(0);
+    font-size:1rem;
+}
+.newGame{
+    height:3rem;
+    margin-bottom:8rem;
+    margin-top:1.5rem;
+    font-size:2rem;
+}
+.roller{
+    height:1rem;
+    margin-bottom:1.5rem;
+}
+.holder{
+    height:1rem;
+    margin-bottom:6rem;
+}
+.playerscore-1__heading,
+.playerscore-0__heading{
+    font-size:1.2rem;
+    font-weight:400;
+    text-align:center;
+}
+.player-score{
+    text-align:center;
+}
+.playerscore-0{
+    margin-bottom:1.8rem;
+}
+.playerscore-1{
+    margin-bottom:6rem;
+}

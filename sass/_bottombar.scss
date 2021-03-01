@@ -1,0 +1,46 @@
+.bottombar{
+    display:flex;
+    flex-direction:row;
+}
+.player0{
+    background-color:lightgray;
+    height:11rem;
+    flex:0 0 50%;
+    padding:3.2rem;
+}
+.player1{
+    flex:1;
+    height:11rem;
+    background-color:#F8F5B1;
+    padding:3.2rem;
+}
+.player-name {
+    font-size:1.5rem;
+    font-family:inherit;
+    text-align: center;
+    font-weight: 100;
+    position: relative;
+}
+.player-current-label{
+    text-align:center;
+    margin:1rem;
+}
+.player-current-score{
+    text-align:center;
+}/*
+.active{background-color:#f7f7f7;
+
+}*/
+.active .player-name { font-weight: 300; }
+
+.active .player-name::after {
+    content: "\2022";
+    font-size: 37px;
+    position: absolute;
+    color: #FFB800;
+    top: -7px;
+    right: 80px;
+    
+}
+.winner { background-color: #f7f7f7; }
+.winner .player-name { font-weight: 300; color: #FFB800; }
